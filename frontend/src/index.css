@@ -1,0 +1,192 @@
+/* ---- Global Reset ---- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "Segoe UI", sans-serif;
+}
+
+body {
+  background: linear-gradient(180deg, #0f172a, #1e293b);
+  color: #e2e8f0;
+  transition: background 0.5s, color 0.5s;
+  overflow-x: hidden;
+}
+
+body.light {
+  background: linear-gradient(180deg, #f8fafc, #e2e8f0);
+  color: #0f172a;
+}
+
+/* ---- Navbar ---- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  backdrop-filter: blur(15px);
+  background: rgba(15, 23, 42, 0.6);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar.light {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.nav-links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #cbd5e1;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.nav-links a:hover {
+  color: #38bdf8;
+}
+
+.brand {
+  font-weight: 700;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* ---- Hero Section ---- */
+.hero {
+  text-align: center;
+  padding: 100px 20px 50px;
+  background: url("https://images.unsplash.com/photo-1605405747561-bb7e1a19b4b1?w=1600") center/cover no-repeat;
+  color: white;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  position: relative;
+  z-index: 1;
+  color: #38bdf8;
+  text-shadow: 0 0 15px rgba(56, 189, 248, 0.8);
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: #cbd5e1;
+  max-width: 800px;
+  margin: 20px auto;
+  position: relative;
+  z-index: 1;
+}
+
+.hero .btn {
+  background: #38bdf8;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+
+.hero .btn:hover {
+  background: #0ea5e9;
+  transform: translateY(-2px);
+}
+
+/* ---- Stats Section ---- */
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin: 60px auto;
+  flex-wrap: wrap;
+}
+
+.stat {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 30px 50px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.stat:hover {
+  transform: translateY(-10px);
+}
+
+.stat h3 {
+  font-size: 2rem;
+  color: #38bdf8;
+}
+
+/* ---- Dashboard Section ---- */
+.dashboard {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+.dashboard h2 {
+  text-align: center;
+  color: #38bdf8;
+  margin-bottom: 30px;
+}
+
+/* ---- Cards ---- */
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* ---- Footer ---- */
+.footer {
+  text-align: center;
+  padding: 20px;
+  color: #94a3b8;
+  font-size: 0.9rem;
+  margin-top: 50px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* ---- Theme Toggle ---- */
+.theme-toggle {
+  background: none;
+  border: 1px solid #38bdf8;
+  color: #38bdf8;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.theme-toggle:hover {
+  background: #38bdf8;
+  color: white;
+}

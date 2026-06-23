@@ -1,0 +1,47 @@
+[
+  {
+    "grid_id": "281_807",
+    "state": "Uttar Pradesh",
+    "hour": 20,
+    "lat": 28.1194,
+    "lon": 80.7910,
+    "accidents": 1,
+    "risk_score": 150.0
+  },
+  {
+    "grid_id": "147_813",
+    "state": "Andhra Pradesh",
+    "hour": 20,
+    "lat": 14.7384,
+    "lon": 81.3268,
+    "accidents": 1,
+    "risk_score": 115.0
+  },
+  {
+    "grid_id": "287_771",
+    "state": "Delhi",
+    "hour": 20,
+    "lat": 28.7017,
+    "lon": 77.1289,
+    "accidents": 1,
+    "risk_score": 110.0
+  },
+  {
+    "grid_id": "249_803",
+    "state": "Madhya Pradesh",
+    "hour": 20,
+    "lat": 24.9714,
+    "lon": 80.3371,
+    "accidents": 1,
+    "risk_score": 100.0
+  },
+  {
+    "grid_id": "187_709",
+    "state": "Maharashtra",
+    "hour": 20,
+    "lat": 18.7126,
+    "lon": 70.9069,
+    "accidents": 1,
+    "risk_score": 100.0
+  }
+]
